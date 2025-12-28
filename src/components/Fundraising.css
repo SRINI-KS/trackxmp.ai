@@ -1,0 +1,91 @@
+.fundraising {
+  padding: 100px 0;
+  background: white;
+}
+
+.fundraising-text {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #475569;
+}
+
+.fundraising-payment {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fundraising-payment-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fundraising-payment-subtitle {
+  font-size: 1.125rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.payment-box {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.payment-instruction {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 1.5rem;
+}
+
+.payment-badges {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #667eea;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 640px) {
+  .fundraising {
+    padding: 60px 0;
+  }
+
+  .fundraising-payment-title {
+    font-size: 1.5rem;
+  }
+
+  .payment-box {
+    padding: 24px;
+  }
+
+  .qr-code {
+    max-width: 250px;
+  }
+}

@@ -1,0 +1,62 @@
+.problem {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.problem .section-title {
+  color: white;
+  background: none;
+  -webkit-text-fill-color: white;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 60px;
+}
+
+.problem-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 32px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.problem-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.problem-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.problem-title {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.problem-description {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .problem {
+    padding: 60px 0;
+  }
+
+  .problem-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .problem-card {
+    padding: 24px;
+  }
+}
